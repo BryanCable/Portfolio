@@ -1,0 +1,25 @@
+/*  FONT STYLES START*/
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+
+
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:700');
+
+
+
+
+/* FONT STYLES END */
+
+/* HEADER STYLES START */
+
+.header_image {
+    background-image: url('../img/desk_jumbo.jpg');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* MEDIA QUERIES END */
