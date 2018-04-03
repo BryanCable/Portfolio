@@ -7,18 +7,396 @@
 
 @import url('https://fonts.googleapis.com/css?family=Alegreya+SC:700');
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+
+
 
 
 
 /* FONT STYLES END */
 
-/* HEADER STYLES START */
+/* NAV/HERO STYLES START */
 
-.header_image {
+.desk-bg {
     background-image: url('../img/desk_jumbo.jpg');
+    background-position: fixed;
+    width: 100%;
+    height: 980px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-container {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-row {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
+.nav>li>a {
+    color: #EAD8AC;
+}
+
+.name-title {
+    padding-left: 47px;
+
+}
+
+
+/* NAV/HERO STYLES END */
+
+/* CONTENT STYLES STARTS */
+
+.about-container {
+    width: 100%;
+}
+
+/* ABOUT ME STYLES START */
+
+.about-row {
+    display: flex;
+    justify-content: center;
+}
+
+.about-col {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ABOUT ME STYLES END */
+
+/* SKILLS LABEL STYLES START */
+
+.content-container {
+    width: 100%;
+    background-image: url('../img/plain-desk.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    margin-top: 40px;
+}
+
+.skills_row {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.skills_label {
+    font-family: 'Alegreya SC', serif;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* SKILLS LABEL STYLES END */
+
+/* THUMBNAIL STYLES START */
+
+.thumbnail_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thumbnail>img {
+    height: 150px;
+}
+
+.thumbnail {
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 30px;
+}
+
+
+
+/* THUMBNAIL STYLES END */
+
+/* PROJECT THUMBNAIL STYLES START */
+
+.project_thumbnail>img {
+    height: 150px;
+}
+
+/* PROJECT THUMBNAIL STYLES END */
+
+/* CONTENT STYLES END */
+
+/* FOOTER STYLES START */
+
+.footer-container {
+    background-image: url('../img/footer-bg2.jpg');
     width: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0 50px;
+}
+
+.social-media>p {
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.social-media .icons {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.social-media .icons li {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+a {
+    display: block;
+    transition: all 0.3s ease, box-shadow 0.1s ease;
+    color: #fff;
+}
+
+.button {
+    font-size: 35px;
+}
+
+.btn-facebook:hover {
+    color: RGBA(67, 85, 149, 1.00);
+}
+
+.btn-github:hover {
+    color: RGBA(210, 109, 79, 1.00);
+}
+
+.btn-linkedin:hover {
+    color: RGBA(67, 117, 171, 1.00);
+}
+
+/* FOOTER STYLES END */
+
+/* COLORS START */
+
+.indian-red {
+    color: #C46C54;
+}
+
+.pale-goldenrod {
+    color: #EAD8AC;
+}
+
+
+/* COLORS END */
+
+/* HR TAG STYLES START */
+
+hr {
+    margin-top: 60px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-top: 6px solid #7A9179;
+}
+
+/* HR TAG STYLES END */
+
+/* RESUME STYLES START */
+
+.resume-bg {
+    background-image: url('../img/resume-bg.jpg');
+    width: 100%;
+    height: 1900px;
+    background-position: center;
+    background-size: cover;
+}
+
+.resume-nav-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.resume-nav-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.resume-name-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.resume-img {
+    width: 60%;
+    height: 1500px;
+}
+
+/* RESUME STYLES END */
+
+/* FONT STYLES START */
+
+.josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.amatic {
+    font-family: 'Amatic SC', cursive;
+}
+
+.merriweather-bold {
+    font-family: 'Merriweather', serif;
+}
+
+.merriweather {
+    font-family: 'Merriweather:400', serif;
+}
+
+/* FONT STYLES END */
+
+/* MEDIA QUERIES START */
+
+@media screen and (min-width: 750px) and (max-width: 1300px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-row {
+        width: 50%;
+        padding-left: 0;
+    }
+    .name-row {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 0;
+    }
+    .name-title {
+        width: 100%;
+    }
+    .nav-col {
+        display: inline-flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: nowrap;
+        padding-left: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .header-container {
+        width: 100%;
+    }
+
+    .desk-bg {
+        background-image: url('../img/cellphone.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 0px 159px;
+        background-size: 100% 75%;
+        width: 100%;
+        height: 900px;
+    }
+    .nav-container {
+        position: fixed;
+    }
+    .nav-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        padding: 0;
+    }
+    .nav-col {
+        width: 100%;
+    }
+    .nav-pills {
+        width: 100%;
+    }
+    .nav>li>a {
+        color: #92584F;
+        padding: 10px 8px;
+    }
+    .name-row {
+        display: flex;
+        justify-content: center;
+    }
+    .name-title {
+        width: 100%;
+    }
+    .amatic {
+        font-family: 'Merriweather', serif;
+        font-size: 21px;
+    }
+    .skills_row {
+        margin-top: 0;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .skills_row {
+        margin-top: 0;
+    }
+    .thumbnail {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .nav-container {
+        background-color: rgba(1, 1, 1, .2);
+        width: 100%;
+    }
+    .name-title {
+        padding: 0;
+    }
+    .nav-col {
+        padding: 0;
+    }
+    b {
+        overflow: none;
+    }
 }
 
 
