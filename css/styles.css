@@ -323,6 +323,10 @@ hr {
 
 @media screen and (max-width: 750px) {
 
+    .header-container {
+        width: 100%;
+    }
+
     .desk-bg {
         background-image: url('../img/cellphone.png');
         background-attachment: fixed;
@@ -383,9 +387,6 @@ hr {
     .nav-container {
         background-color: rgba(1, 1, 1, .2);
         width: 100%;
-    }
-    .container {
-        padding: 0;
     }
     .name-title {
         padding: 0;
