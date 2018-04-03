@@ -226,6 +226,49 @@ hr {
 
 /* HR TAG STYLES END */
 
+/* RESUME STYLES START */
+
+.resume-bg {
+    background-image: url('../img/resume-bg.jpg');
+    width: 100%;
+    height: 1900px;
+    background-position: center;
+    background-size: cover;
+}
+
+.resume-nav-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.resume-nav-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.resume-name-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.resume-img {
+    width: 60%;
+    height: 1500px;
+}
+
+/* RESUME STYLES END */
+
 /* FONT STYLES START */
 
 .josefin {
@@ -248,43 +291,72 @@ hr {
 
 /* MEDIA QUERIES START */
 
-@media screen and (min-width: 1000px) and (max-width: 1302px) {
-    .nav>li>a {
-        padding: 10px 10px;
+@media screen and (min-width: 750px) and (max-width: 1300px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-around;
     }
-
     .nav-row {
+        width: 50%;
         padding-left: 0;
     }
-
-    .nav-col {
+    .name-row {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: nowrap;
         padding-left: 0;
     }
-
     .name-title {
+        width: 100%;
+    }
+    .nav-col {
+        display: inline-flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: nowrap;
         padding-left: 0;
     }
+
 }
 
-@media screen and (max-width: 1120px) and (min-width: 1000px) {
-    .nav-pills {
-        font-size: 2em;
-    }
-}
 
 @media screen and (max-width: 750px) {
+
     .desk-bg {
         background-image: url('../img/cellphone.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 0px 159px;
+        background-size: 100% 75%;
         width: 100%;
-        height: 500px;
+        height: 900px;
+    }
+    .nav-container {
+        position: fixed;
     }
     .nav-row {
+        display: flex;
+        justify-content: center;
         margin-top: 0;
         padding: 0;
+    }
+    .nav-col {
+        width: 100%;
+    }
+    .nav-pills {
+        width: 100%;
     }
     .nav>li>a {
         color: #92584F;
         padding: 10px 8px;
+    }
+    .name-row {
+        display: flex;
+        justify-content: center;
+    }
+    .name-title {
+        width: 100%;
     }
     .amatic {
         font-family: 'Merriweather', serif;
@@ -307,7 +379,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .nav-container {
         background-color: rgba(1, 1, 1, .2);
         width: 100%;
