@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Bryan Cable</title>
 </head>
-<body>
+<body data-spy="scroll">
 
     <!-- Start of Nav/Hero -->
-    <div class="header-container">
+    <div class="header-container" id="home">
         <div class="desk-bg img-responsive">
             <div class="container nav-container">
                 <div class="row nav-row">
                     <div class="col-xs-6 col-sm-4 nav-col">
                         <ul class="nav nav-pills amatic">
-                            <li role="presentation"><a href="#">Home</a></li>
-                            <li role="presentation"><a href="resume.html">Resume</a></li>
-                            <li role="presentation"><a href="#">Hire Me</a></li>
+                            <li role="presentation"><a href="#home">Home</a></li>
+                            <li role="presentation"><a href="#skills">Skills</a></li>
+                            <li role="presentation"><a href="#hire">Hire Me</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
         <!-- THUMBNAILS START -->
     
             
-        <div class="row thumbnail_row">
+        <div class="row thumbnail_row" id="skills">
             <div class="col-xs-6 col-md-3">
                 <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" class="thumbnail wood-bg img-responsive">
                 <img src="img/html5.png" alt="HTML5 Logo">
@@ -79,7 +79,7 @@
                 </a>
             </div>
             <div class="col-xs-6 col-md-3">
-                <a href="https://en.wikipedia.org/wiki/JavaScript target=" target="_blank" class="thumbnail wood-bg img-responsive">
+                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="thumbnail wood-bg img-responsive">
                 <img src="img/js.png" alt="Javascript Logo">
                 </a>
             </div>
@@ -115,6 +115,51 @@
 
     <!-- End of about me -->
 
+    <!-- Hire me contact form starts -->
+
+    <div class="container hire-container" id="hire">
+        <div class="row hire-row">
+            <div class="col-sm-8 hire-col">
+                <hr>
+                <form>
+                    <h4 class="light-underline">About You</h4>
+                    <div class="form-group">
+                        <label for="name"><h6>Your Name<span class="red-text">*</span></h6> </label>
+                        <input type="text" class="form-control" id="name" placeholder="eg. John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><h6>Email Address<span class="red-text">*</span></h6> </label>
+                        <input type="email" class="form-control" id="email" placeholder="eg. johndoe@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><h6>Phone Number<span class="red-text">*</span></h6> </label>
+                        <input type="tel" class="form-control" id="phone" placeholder="555-555-5555">
+                    </div>
+                    <div class="form-group">
+                        <label for="website"><h6>Your Website</h6></label>
+                        <input type="text" class="form-control" id="website" placeholder="eg. johnswebsite.com">
+                    </div>
+                    <h4 class="light-underline">Project Details</h4>
+                    <p>Please specify a budget and ideal completion date (when you're aiming for the website to go live or to have the front-end files ready for back-end integration for example). This helps me determine the best solution within your given circumstances.</p>
+                    <div class="form-group">
+                        <label for="budget"><h6>Your Budget</h6></label>
+                        <input type="number" class="form-control" id="budget" placeholder="eg. $1500">
+                    </div>
+                    <div class="form-group">
+                        <label for="completion"><h6>Ideal completion date</h6></label>
+                        <input type="date" class="form-control" id="completion">
+                    </div>
+                    <h4 class="light-underline">Project Description<span class="red-text">*</span></h4>
+                    <p>Please briefly describe your project, what you aim to achieve, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox).</p>
+                    <textarea class="form-control" rows="3"></textarea>
+                </form>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hire me contact form ends -->
+
     <!-- Footer starts -->
 
     <div class="container footer-container">
@@ -122,18 +167,23 @@
             <p>Connect With Me</p>
             <ul class="icons">
                 <li>
-                    <a href="#" class="btn-facebook button">
-                            <i class="fab fa-facebook"></i>
+                    <a href="https://twitter.com/Bryan97736086?lang=en" class="btn-twitter button">
+                            <i class="fab fa-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="btn-github button">
+                    <a href="https://github.com/BryanCable" class="btn-github button">
                             <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="btn-linkedin button">
+                    <a href="https://www.linkedin.com/in/bryan-cable-707b7a160/" class="btn-linkedin button">
                             <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:bryancable4321@gmail.com" class="btn-envelope button">
+                            <i class="fas fa-envelope"></i>
                     </a>
                 </li>
             </ul>
