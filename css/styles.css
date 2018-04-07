@@ -81,6 +81,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 /* ABOUT ME STYLES END */
@@ -151,11 +153,23 @@
     justify-content: center;
 }
 
+.hire-col {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 .light-underline {
     border-bottom: 1px solid rgba(1, 1, 1, .07);
     padding-bottom: 5px;
 }
 
+.checkbox {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    margin-left: 10px;
+}
 /* HIRE ME STYLES END */
 
 /* FOOTER STYLES START */
